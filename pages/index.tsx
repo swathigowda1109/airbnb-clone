@@ -25,6 +25,7 @@ interface PropType {
   ];
 }
 const Home: NextPage<PropType> = ({ exploreData, cardsData }) => {
+  window.addEventListener('contextmenu', (e) => e.preventDefault());
   return (
     <>
       <div className="">
